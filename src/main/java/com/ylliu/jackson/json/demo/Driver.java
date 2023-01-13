@@ -9,7 +9,7 @@ public class Driver {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
 
-            Student student = objectMapper.readValue(new File("data/sample-lite.json"), Student.class);
+            Student student = objectMapper.readValue(new File("data/sample-full.json"), Student.class);
 
             System.out.println(student.toString());
         } catch (Exception exc) {
